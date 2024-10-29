@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBottle - Garrafa Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>EcoBottle</h1>
+        <p>A garrafa sustentável que mantém a temperatura por 24 horas.</p>
+        <button onclick="scrollToSection('orderSection')">Compre Agora</button>
+    </header>
+
+    <section class="features">
+        <h2>Benefícios</h2>
+        <div class="feature-list">
+            <div>
+                <h3>Isolamento Avançado</h3>
+                <p>Mantém a temperatura da sua bebida quente ou fria por 24 horas.</p>
+            </div>
+            <div>
+                <h3>Material Sustentável</h3>
+                <p>Feita com materiais 100% recicláveis e ecológicos.</p>
+            </div>
+            <div>
+                <h3>Design Ergonômico</h3>
+                <p>Fácil de segurar e transportar para qualquer lugar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que dizem nossos clientes</h2>
+        <blockquote>"A EcoBottle mudou minha rotina! Minha bebida se mantém fresca o dia todo."</blockquote>
+        <blockquote>"Adoro a sustentabilidade e a durabilidade. É um produto incrível!"</blockquote>
+    </section>
+
+    <section class="order" id="orderSection">
+        <h2>Faça seu pedido</h2>
+        <form id="orderForm" onsubmit="placeOrder(event)">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="address" placeholder="Endereço para entrega" required></textarea>
+            <input type="number" id="quantity" placeholder="Quantidade" min="1" value="1" required>
+            <p>Preço: R$ 99,99 cada</p>
+            <button type="submit">Comprar Agora</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(34, 49, 63, 0.8), rgba(34, 49, 63, 0.8)), url('../images/eco-bottle.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeInHero 1.5s ease-in-out;
+}
+
+@keyframes fadeInHero {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* FEATURES SECTION */
+.features {
+    padding: 60px 20px;
+    background-color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.features .feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.features .feature-list div {
+    flex: 1 1 250px;
+    background: #f0f4f8;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.features .feature-list div:hover {
+    transform: translateY(-10px);
+}
+
+.features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.features p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #e8f5e9;
+    margin: 10px 0;
+}
+
+/* ORDER SECTION */
+.order {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.order h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#orderForm {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#orderForm input, #orderForm textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#orderForm button {
+    padding: 14px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#orderForm button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
